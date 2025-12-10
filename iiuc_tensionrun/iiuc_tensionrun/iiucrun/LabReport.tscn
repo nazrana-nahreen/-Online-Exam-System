@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://pw7nq1oqqssy"]
+
+[ext_resource type="Texture2D" uid="uid://bo88j86xe13ux" path="res://assets/img/lab_report.png" id="1_gduvk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_meh4m"]
+size = Vector2(1056, 1360)
+
+[node name="LabReport" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(112, 304)
+texture = ExtResource("1_gduvk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(112, 304)
+shape = SubResource("RectangleShape2D_meh4m")

@@ -1,0 +1,107 @@
+[gd_scene load_steps=3 format=3 uid="uid://nnohdk8pxkt2"]
+
+[ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_ahhtf"]
+[ext_resource type="PackedScene" uid="uid://desfexoebv53a" path="res://restartbutton.tscn" id="2_oo0fn"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 87.0
+offset_bottom = 28.0
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.192157, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 28
+text = "সিজিপিএ:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IIUCTAG" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.0
+offset_top = -36.0
+offset_right = 203.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.533964, 0.0130161, 0.271747, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 52
+text = "IIUC Tension_Run"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HIGHSCORE" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -179.0
+offset_bottom = 26.0
+grow_horizontal = 0
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.184314, 0.164706, 0.192157, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 28
+text = "কামব্যাক স্কোর:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="START" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = 52.0
+offset_right = 199.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.183646, 0.165246, 0.192841, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 33
+text = "\"প্যারা খাওয়ার জন্য স্পেস বার চাপো!\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="coins" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -44.5
+offset_right = 44.5
+offset_bottom = 31.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.183646, 0.165246, 0.192841, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 28
+text = "টাকা:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GORIB" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_top = 208.0
+offset_right = 258.0
+offset_bottom = 251.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.183646, 0.165246, 0.192841, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 46
+text = "গরিবের আবার কিসের পড়াশোনা! 😂"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RESTART" parent="." instance=ExtResource("2_oo0fn")]

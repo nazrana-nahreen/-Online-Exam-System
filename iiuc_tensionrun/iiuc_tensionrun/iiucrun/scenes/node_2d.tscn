@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8k4kgu56n5rr"]
+
+[ext_resource type="Script" uid="uid://c6vl1d1gewuqd" path="res://parallax_background.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://4m0ws7wmg4x5" path="res://background/bg.png" id="2_epypp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("1_0e48y")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(0, 325)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("2_epypp")

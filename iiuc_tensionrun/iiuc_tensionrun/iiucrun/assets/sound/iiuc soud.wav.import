@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dusjqr7ikn7n2"
+path="res://.godot/imported/iiuc soud.wav-844618fdd5b94d51d729287e34f0a488.sample"
+
+[deps]
+
+source_file="res://assets/sound/iiuc soud.wav"
+dest_files=["res://.godot/imported/iiuc soud.wav-844618fdd5b94d51d729287e34f0a488.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
